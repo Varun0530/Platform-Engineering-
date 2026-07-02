@@ -1,0 +1,2 @@
+this is my first commit in VI edito
+If I want to find any word  in the VI editor , we use "/word" to search the word in the editor for example if I want to spot the word "want" I will write /want.

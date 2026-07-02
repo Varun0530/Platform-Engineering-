@@ -1,0 +1,17 @@
+Services in Linux:
+
+1) service httpd start : start HTTPD service
+2) systemctl start httpd
+
+> systemctl stop httpd -stops the server
+
+> systemctl status httpd check httpd service status
+
+> systemctl enable httpd configure httpd to start at startup
+
+> systemctl disable httpd configure htppd to not start at startup 
+
+
+if you want your app to start ior stop as soon as the mach9ine starts or stops then u should store the app in /etc/systemd/system file where it should be name as my_app.service
+systemctl daemon-reload > reload and start the new made service 
+servicesystemctl start my-app
