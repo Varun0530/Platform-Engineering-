@@ -1,0 +1,26 @@
+Docker Commands that you should know:
+
+1) docker run nginx ---
+2) docker ps ---- list all running containers
+3) docker ps -a --- list all running containers as well as prev running containers
+4) docker stop " name" -- stops the running containers
+5) docoker rm "name" --removes the containers from the system
+6) docker images --shows all the images that are present in the local device
+7) docker rmi "name image" --- it removes all the images as mentioned just make sure that all the containers related to it are stopped first
+8) docker pull nginx -- this command will only pu;; the image from docker hub to our host and store it and wont run it
+
+
+# unlike Vms containers are not used to run Vms they are used to run specific task and processes, once the task is executed the containers is exited
+9) docker run Ubuntu sleep 5 -- container sleeps after 5 seconds
+10) docker run -d kodekloud/simple-webapp -- it runs the command in background and a Id is generated for the container for example :12usda
+
+11) now if you want to get attached to the same container again u just type--- docker attach 12us 9 first few digits and docker will execte it automatically
+
+12)docker run redis 4:0 # installs the versiona s tagged in the command 
+docker run redis:latest ---- installs the latest commands
+
+13) docker run -i/-it ---used to iteractive sessions
+
+14) docker inspect nginx -- this will send the whole data regarding the container to us
+
+15) docker logs redis -- gives us the logs for the redis container
