@@ -1,0 +1,56 @@
+Basics Linux Commands:
+
+echo hi ------> Hi (Print statement as in Py)
+ls ---> used to list files and folders in a directory
+cd my_dir1  -----> changes the directory
+
+pwd ---> presents the working directory
+
+mkdir new_directory ----> this helps in making us a new directory
+
+so for example if we do the below operations:
+
+cd new_directory;mkdir www;pwd 
+it open the new_directory and then it will make a new directory named as www and then show us the the directory by www
+
+
+
+
+# Make directory heirarchy
+
+for exampple if you want to make /tmp/india/asia/pune
+then u dont have to iterate through eahc and every folder instead use the below command:
+
+mkdir -p/tmp/india/maharashtra/pune
+
+
+# to remove a directory:
+
+rm -r/tmp/my_dir1
+
+# to copy a directory;
+
+cp -r my_dir1/tmp/my_dir1
+
+
+
+***************************** FILE COMMANDS *******************************
+
+
+# create a new file wiht no content:
+
+touch new_file.txt/new_file.Py
+
+
+
+# add contents to the file:
+
+cat > new_file.txt ( after running this command it will give u a space to write the content which you want to provide in the file and then it will be placed in the file)
+
+# View contents of file:
+car new_file.txt
+this will display the file contents present inside the file
+
+
+# move (rename) file
+mv new_file.txt sample_file.txt ( renames the files and moves it in the same directory)

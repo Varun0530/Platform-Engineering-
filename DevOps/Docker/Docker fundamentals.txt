@@ -1,0 +1,150 @@
+What is Docker?
+
+Docker is an open-source platform that allows you to build, package, distribute, and run applications inside containers.
+
+A Docker container includes:
+
+Your application
+Required libraries
+Dependencies
+Runtime
+Configuration
+
+This means the application behaves the same way regardless of where it's run.
+
+
+Definition:
+    Docker is a containerization platform that packages an application along with all its dependencies into a lightweight,
+portable container, ensuring it runs consistently across different environments.
+
+
+Why do we need Docker?
+
+Before Docker, developers often faced the classic problem:
+
+"It works on my machine, but not on yours."
+
+Without Docker
+
+Imagine you're developing a Python application.
+
+Your laptop has:
+
+Python 3.12
+Flask 3.1
+Ubuntu 24.04
+
+Your teammate has:
+
+Python 3.9
+Flask 2.2
+Windows
+
+The application may fail because of version differences or missing dependencies.
+
+With Docker
+
+You package everything inside a container.
+
+Docker Container
+├── Application
+├── Python 3.12
+├── Flask 3.1
+├── Libraries
+└── Configuration
+
+Now the same container can run on:
+
+Windows
+Linux
+macOS
+Cloud servers
+
+without changing the application.
+
+##  Problems Docker solves ## 
+
+Consistent environments across development, testing, and production.
+Simplifies deployment.
+Eliminates dependency conflicts.
+Faster application startup than virtual machines.
+Better resource utilization.
+Easy scalability.
+Simplifies CI/CD pipelines.
+
+
+                                     ###########################################
+
+What is a Container?
+
+A container is an isolated environment that packages an application together with everything it needs to run.
+
+It shares the host operating system's kernel while keeping processes isolated from one another.
+
+Think of a container as a lightweight, portable application package.
+
+
+                                     ###########################################
+
+What is a Virtual Machine?
+
+A virtual machine (VM) is a complete virtual computer.
+
+Each VM includes:
+
+Virtual hardware
+A full guest operating system
+System libraries
+Applications
+
+Every VM runs its own operating system.
+
+                                ###########################################
+
+What is WSL?
+
+WSL stands for Windows Subsystem for Linux.
+
+It is a Microsoft feature that lets you run a Linux environment directly on Windows without installing Linux as your main operating system.
+
+Instead of dual-booting or creating a traditional virtual machine, WSL provides a Linux environment that integrates closely with Windows.
+
+WSL 2
+
+WSL 2 uses a real Linux kernel.
+
+Instead of translating Linux system calls, Microsoft runs an actual Linux kernel in a lightweight virtual machine.
+
+Linux Application
+        │
+Linux Kernel
+        │
+Lightweight VM
+        │
+Windows
+
+This is why Docker works so well with WSL 2.
+
+Is WSL 2 a virtual machine?
+
+Yes—but not in the traditional sense.
+
+Technically, WSL 2 runs inside a tiny VM using Hyper-V technology.
+
+However, compared to VirtualBox or VMware:
+
+Traditional VM:
+
+Ubuntu
+Guest OS
+Virtual Hardware
+Hypervisor
+Windows
+
+WSL 2:
+
+Linux Kernel
+Lightweight VM
+Windows
+
+The VM is highly optimized and starts almost instantly.
