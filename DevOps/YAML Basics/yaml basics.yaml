@@ -1,0 +1,39 @@
+# > YAML is a serialization language and it stands YAML aint markup language.
+# > extensions are .yaml and .yml
+# > yaml is space senstive and do have idententation errors
+
+
+# example of YAML file:
+
+microservices:
+    app: "user-auth"
+    port: 900
+    version: 1.0
+
+
+# > Yaml use cases: kubernates, docker compose file and ansible etc
+
+
+# Basic syntax of yaml: data is stored in key value pairs in yaml
+# using an object to store data in yaml:
+
+user_info:
+    username: varun
+    user_id=: 239
+    user_dob: 123221
+
+
+# List in Yaml: for example there are multiple users in a object name duser_info then we can use list to store data of multiple users:
+
+user_info:
+    - username: varun
+      user_id=: 239
+      user_dob: 123221
+
+    - username: steph
+      user_id: 231
+      user_dob: 1238283
+      # we can express boolean by true/false or yes/no/ on/off
+      status: on
+
+
