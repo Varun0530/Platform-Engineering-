@@ -37,3 +37,14 @@ user_info:
       status: on
 
 
+# example of a prod configuration given below:
+spec:
+    containers: #(list)
+    - name: nginx-containers
+      image: nginx
+      ports: #(list)
+      - containerPort: 80
+      voumeMounts: #( list of objects)
+      - name: nginx-vol
+        moutnPath: /lisr/nginx/html
+
