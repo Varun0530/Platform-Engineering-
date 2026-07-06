@@ -48,3 +48,9 @@ spec:
       - name: nginx-vol
         moutnPath: /lisr/nginx/html
 
+# placeholders in yaml:
+metadata:
+  name: {{ .values.servives.port }}    # place holders are denoted by double curly brackets 
+  # YAML itself does not have placeholders as part of the language specification. 
+  # A placeholder is usually a variable or template value that another tool replaces when it processes the YAML.
+
