@@ -254,3 +254,39 @@ Unpause	docker unpause node_container	Kept	  Resumes      	Continues where it st
 Stop	docker stop node_container	    Released  Stopped	    Process exits
 Start	docker start node_container	    Allocated again	        Running	App starts normally
 
+
+
+
+**************************************** Docker iteractive session :
+
+-i and -it are very commonly used in Docker when you want to interact with a running container instead of letting it run silently in the background.
+
+What does -i mean?
+
+-i stands for interactive.
+
+It keeps STDIN (keyboard input) open for the container.
+
+
+
+
+-IT together
+This combines:
+
+-i → keep keyboard input open
+-t → provide a terminal
+
+
+
+without IT 
+What happens?
+
+Container starts.
+bash launches.
+No interactive terminal is attached.
+bash exits.
+Container stops.
+
+
+with -IT
+u get a ietractive terminal to interact with the file system and surf through it
