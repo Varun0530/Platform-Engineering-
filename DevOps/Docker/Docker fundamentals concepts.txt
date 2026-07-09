@@ -186,5 +186,71 @@ Like a recipe	Like a baked cake
 
 An image is a static blueprint, while a container is a running instance of that blueprint.
 
-Provide your feedback on BizChat
+************************ Think of a container like a laptop:
+
+Running = laptop is ON.
+Paused = laptop is in Sleep mode.
+Stopped = laptop is Shut Down.
+1. Pause a Container
+
+
+What happens?
+
+Processes are frozen.
+CPU usage becomes essentially zero.
+Memory (RAM) is still occupied.
+Container state is preserved exactly as-is.
+
+
+2. Unpause a Container
+
+What happens?
+
+Frozen processes resume.
+Memory remains intact.
+The application continues from where it stopped.
+
+Use Cases
+
+✅ Temporarily free CPU resources
+
+✅ Pause a workload during troubleshooting
+
+✅ Suspend a long-running process without shutting it down
+
+
+3. Stop a Container
+
+What happens?
+
+Docker sends a termination signal.
+The main process exits.
+Container is no longer running.
+Memory is released.
+
+Use Cases
+
+✅ Application maintenance
+
+✅ Deploying a new version
+
+✅ Saving machine resources
+
+✅ Restarting with new configuration
+
+RESUME AFTER STOP 
+The container starts again.
+
+Important difference:
+
+A stopped container does not continue from the exact execution point.
+
+
+
+
+Action	Command	RAM	                    CPU	      App           State
+Pause	docker  pause node_container	Kept	  Frozen	    Preserved exactly
+Unpause	docker unpause node_container	Kept	  Resumes      	Continues where it stopped
+Stop	docker stop node_container	    Released  Stopped	    Process exits
+Start	docker start node_container	    Allocated again	        Running	App starts normally
 
