@@ -10,6 +10,10 @@ mkdir new_directory ----> this helps in making us a new directory
 
 so for example if we do the below operations:
 
+point to note : 
+1) - at the beginning = file
+2) d at the beginning = directory
+
 cd new_directory;mkdir www;pwd 
 it open the new_directory and then it will make a new directory named as www and then show us the the directory by www
 
@@ -32,7 +36,7 @@ rm -r/tmp/my_dir1
 
 cp -r my_dir1/tmp/my_dir1
 
-
+cd ..  -----> back click in linux
 
 ***************************** FILE COMMANDS *******************************
 
@@ -40,15 +44,18 @@ cp -r my_dir1/tmp/my_dir1
 # create a new file wiht no content:
 
 touch new_file.txt/new_file.Py
-
-
+ 
+**** important note **** --------> mkdir cmd makes a new directory and not a new file, if you want to make a new file then u have to use cmd "touch" and then proceed.
 
 # add contents to the file:
 
 cat > new_file.txt ( after running this command it will give u a space to write the content which you want to provide in the file and then it will be placed in the file)
 
+
+** important note ------->> if we use echo "asjkdbajkd" > .txt , the ">" overwrites the content existing in the file and if you want to append and dont overwrite the content then just use ">>" instead of ">"
+
 # View contents of file:
-car new_file.txt
+cat new_file.txt
 this will display the file contents present inside the file
 
 
