@@ -148,3 +148,43 @@ Lightweight VM
 Windows
 
 The VM is highly optimized and starts almost instantly.
+
+
+
+
+
+*************************** DIFFERNCE BETWEEM CONTAINER AND IMAGE ******************************************
+
+Docker Container
+
+A container is a running (or stopped) instance of an image.
+---------------------->  docker run -d nginx
+
+Docker:
+
+Takes the nginx image
+Creates a writable layer
+Starts the nginx process
+
+
+One Image → Many Containers
+
+The same image can create multiple containers:
+
+docker run nginx
+docker run nginx
+docker run nginx
+
+Quick Summary
+Image	        Container
+Template     	Running instance
+Read-only    	Writable
+Built once	    Created from image
+Stored on disk	Executes processes
+Like a class	Like an object
+Like a recipe	Like a baked cake
+
+An image is a static blueprint, while a container is a running instance of that blueprint.
+
+Provide your feedback on BizChat
+
