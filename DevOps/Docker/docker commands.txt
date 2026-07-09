@@ -8,6 +8,7 @@ Docker Commands that you should know:
 6) docker images --shows all the images that are present in the local device
 7) docker rmi "name image" --- it removes all the images as mentioned just make sure that all the containers related to it are stopped first
 8) docker pull nginx -- this command will only pu;; the image from docker hub to our host and store it and wont run it
+9) docker rename container1(old) container2 (new) -----renaming an container 
 
 
 # unlike Vms containers are not used to run Vms they are used to run specific task and processes, once the task is executed the containers is exited
